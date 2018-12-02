@@ -152,11 +152,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="advent_of_code.hpp" />
+    <ClInclude Include="input_handler.hpp" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="advent_of_code_2018.cpp" />
     <ClCompile Include="day1.cpp" />
+    <ClCompile Include="day2.cpp" />
+    <ClCompile Include="input_handler.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -166,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="day1.txt" />
+    <Text Include="day2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,11 +4,16 @@
 #include "pch.h"
 #include <iostream>
 #include "advent_of_code.hpp"
+#include "input_handler.hpp"
 
 int main() {
 	AdventOfCode aoc{};
-  aoc.day1a();
-  aoc.day1b();
+  InputHandler ih{"day1.txt"};
+  aoc.day1a(ih.getLines());
+  aoc.day1b(ih.getLines());
+  ih.readFile("day2.txt");
+  aoc.day2a(ih.getLines());
+  aoc.day2b(ih.getLines());
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

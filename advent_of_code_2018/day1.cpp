@@ -1,35 +1,21 @@
 #include "pch.h"
-#include <iostream>
+
 #include "advent_of_code.hpp"
 #include <iostream>
-#include <fstream>
-#include <string>
 #include <unordered_map>
-#include <vector>
+#include "input_handler.hpp"
 
-void AdventOfCode::day1a() {
-	std::string line;
-	std::ifstream myfile("day1.txt");
-	if (!myfile.is_open())
-		return;
+void AdventOfCode::day1a(std::vector<std::string> lines) {
 	int sum{};
-	while (getline(myfile, line)) {
+  for (const auto &line : lines)
 		sum += std::stoi(line);
-	}
 	std::cout << sum << "\n";
-	myfile.close();
 }
 
-void AdventOfCode::day1b() {
-  std::string line;
-  std::ifstream myfile("day1.txt");
-  if (!myfile.is_open())
-    return;
+void AdventOfCode::day1b(std::vector<std::string> lines) {
   std::vector<int> frequencies{};
-  while (getline(myfile, line)) {
+  for (const auto &line : lines)
     frequencies.push_back(std::stoi(line));
-  }
-  myfile.close();
 
   std::unordered_map<int, bool> uniqueFrequencies{};
   uniqueFrequencies[0] = true;

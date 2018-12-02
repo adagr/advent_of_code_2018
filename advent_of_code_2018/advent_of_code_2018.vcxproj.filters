@@ -21,6 +21,9 @@
     <ClInclude Include="advent_of_code.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="input_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -32,9 +35,18 @@
     <ClCompile Include="day1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="day2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="day1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="day2.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
