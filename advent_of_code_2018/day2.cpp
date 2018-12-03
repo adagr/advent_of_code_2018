@@ -35,7 +35,7 @@ void AdventOfCode::day2b(std::vector<std::string> lines) {
         continue;
       bool differ{false};
       for (unsigned i{}; i < line.size(); ++i) {
-        if (line[i] != line2[i] && !differ)
+        if (!differ && line[i] != line2[i])
           differ = true;
         else if (line[i] != line2[i]) {
           differ = false;

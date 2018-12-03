@@ -9,11 +9,14 @@
 int main() {
 	AdventOfCode aoc{};
   InputHandler ih{"day1.txt"};
-  aoc.day1a(ih.getLines());
+  /*aoc.day1a(ih.getLines());
   aoc.day1b(ih.getLines());
   ih.readFile("day2.txt");
   aoc.day2a(ih.getLines());
-  aoc.day2b(ih.getLines());
+  aoc.day2b(ih.getLines());*/
+  ih.readFile("day3.txt");
+  aoc.day3a(ih.getLines());
+  aoc.day3b(ih.getLines());
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

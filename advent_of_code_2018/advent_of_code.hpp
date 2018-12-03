@@ -13,4 +13,7 @@ public:
 
 	void day2a(std::vector<std::string> lines);
   void day2b(std::vector<std::string> lines);
+
+  void day3a(std::vector<std::string> lines);
+  void day3b(std::vector<std::string> lines);
 };

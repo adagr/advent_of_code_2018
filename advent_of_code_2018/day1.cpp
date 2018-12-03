@@ -2,7 +2,7 @@
 
 #include "advent_of_code.hpp"
 #include <iostream>
-#include <unordered_map>
+#include <unordered_set>
 #include "input_handler.hpp"
 
 void AdventOfCode::day1a(std::vector<std::string> lines) {
@@ -17,17 +17,15 @@ void AdventOfCode::day1b(std::vector<std::string> lines) {
   for (const auto &line : lines)
     frequencies.push_back(std::stoi(line));
 
-  std::unordered_map<int, bool> uniqueFrequencies{};
-  uniqueFrequencies[0] = true;
+  std::unordered_set<int> uniqueFrequencies{};
+  uniqueFrequencies.emplace(0);
   int sum{};
   while (true) {
     for (const auto &frequency : frequencies) {
-      sum += frequency;
-      if (uniqueFrequencies[sum]) {
+      if (!uniqueFrequencies.emplace(sum += frequency).second) {
         std::cout << sum << "\n";
         return;
       }
-      uniqueFrequencies[sum] = true;
     }
   }
 }

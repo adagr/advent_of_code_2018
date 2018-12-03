@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "input_handler.hpp"
-#include <fstream>>
+#include <fstream>
 
 InputHandler::InputHandler(std::string fileName) { readFile(fileName); }
 
