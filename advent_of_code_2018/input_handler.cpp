@@ -2,8 +2,6 @@
 #include "input_handler.hpp"
 #include <fstream>
 
-InputHandler::InputHandler(std::string fileName) { readFile(fileName); }
-
 const std::vector<std::string>& InputHandler::getLines() const {
   return lines_; 
 }

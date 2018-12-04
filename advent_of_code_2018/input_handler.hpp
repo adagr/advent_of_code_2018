@@ -5,7 +5,7 @@
 class InputHandler {
 
 public:
-  explicit InputHandler(std::string fileName);
+  InputHandler() = default;
   ~InputHandler() = default;
 
   const std::vector<std::string>& getLines() const;
