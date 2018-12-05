@@ -161,6 +161,7 @@
     <ClCompile Include="day2.cpp" />
     <ClCompile Include="day3.cpp" />
     <ClCompile Include="day4.cpp" />
+    <ClCompile Include="day5.cpp" />
     <ClCompile Include="input_handler.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -174,6 +175,7 @@
     <Text Include="day2.txt" />
     <Text Include="day3.txt" />
     <Text Include="day4.txt" />
+    <Text Include="day5.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

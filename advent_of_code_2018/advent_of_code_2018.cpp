@@ -17,10 +17,13 @@ int main() {
   aoc.day2b(ih.getLines());
   ih.readFile("day3.txt");
   aoc.day3a(ih.getLines());
-  aoc.day3b(ih.getLines());*/
+  aoc.day3b(ih.getLines());
   ih.readFile("day4.txt");
   aoc.day4a(ih.getLines());
-  aoc.day4b(ih.getLines());
+  aoc.day4b(ih.getLines());*/
+  ih.readFile("day5.txt");
+  aoc.day5a(ih.getLines());
+  aoc.day5b(ih.getLines());
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
